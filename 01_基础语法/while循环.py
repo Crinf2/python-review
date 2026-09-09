@@ -5,7 +5,6 @@ time = 0
 day = 1
 while time < 100:
     print("今天是第%d天，你好，我真的很喜欢你！" % day)
-    day += 1
     time += 1
 
 
@@ -48,4 +47,31 @@ while a <= 9:
         print(f"{b} * {a} = {b * a}\t", end='')
         b += 1
     a += 1
+    print()#相当于手动换行  ！！！！！！！！！！！！！！
+
+
+
+
+
+
+
+''''#重置九九乘法表
+a = 1
+while a <= 9:
+    b = 1
+    while b <= a:
+        print(f"{b} * {a} = {b * a}\t", end='')
+        b += 1
+    a += 1
     print()
+'''
+
+
+
+
+
+
+
+
+
+
