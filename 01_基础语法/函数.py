@@ -65,7 +65,7 @@ def test():
     print(num)
 test()
 print(num)
-
+'''
 #函数的综合案例
 name = None                                     #先定义一个全局变量
 money = 5000000
@@ -106,6 +106,62 @@ while True:
     elif keyboard_input == "3":
         num_2 = int(input("您想取多少钱？\n"))
         out(num_2)
+        continue
+    else:
+        print("程序已经退出！")
+        break
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+#重现函数实例
+money = 5000000
+name = None
+name = input("请输入您的姓名？\n")
+def query(kkk):
+    if kkk:
+        print("---------------查询--------------")
+    print(f"{name}.您好，您的余额剩余{money}元")
+def withdrew(num):
+    print("---------------存款--------------")
+    global money
+    money += num
+    print(f"{name},您好，您存款{num}元成功")
+    query(False)
+def deposit(num):
+    print("---------------取款--------------")
+    global money
+    money -= num
+    print(f"{name},您好，您取款{num}元成功")
+    query(False)
+def menu():
+    print(f"{name},您好，欢迎来到xx银行ATM,请选择：\n")
+    print("查询余额\t[输入1]")
+    print("存款\t\t[输入2]")
+    print("取款\t\t[输入3]")
+    print("退出\t\t[输入4]")
+    return input("请输入您的选择：")
+while True:
+    keyboard_input = menu()
+    if keyboard_input == "1":
+        query(True)
+        continue
+    elif keyboard_input == "2":
+        num = int(input("请输入您要存取的的金额：\n"))
+        withdrew(num)
+        continue
+    elif keyboard_input == "3":
+        num = int(input("请输入您的取款金额：\n"))
+        deposit(num)
         continue
     else:
         print("程序已经退出！")
