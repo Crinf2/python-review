@@ -24,7 +24,7 @@ print(nam_list[0])
 print(nam_list[-4])
 print(nam_list[-1])
 #在嵌套列表中下标写两层
-nam_list = [[1, 2,], ['ddd', 'ddf'], 5, 5]
+nam_list = [[1, 2], ['ddd', 'ddf'], 5, 5]
 print(nam_list[-3][-1])
 print(nam_list[0][0])
 
@@ -45,3 +45,30 @@ print(nam_list[0][0])
 统计某元素在列表中的数量 列表.count(元素)      接收
 统计列表中一共多少元素   len（列表）           接收
 '''
+
+
+'''
+list列表的遍历
+index = 0
+while index < len(列表):
+    元素 = 列表[index]
+    对元素进行处理
+    index += 1
+'''
+
+
+#while 循环遍历
+list_name = ["小明", "向鹏", "王菲"]
+index = 0
+while index < len(list_name):
+    element = list_name[index]
+    print(element)
+    index += 1
+
+
+#for 循环遍历
+for index in range(len(list_name)):
+    element = list_name[index]
+    print(element)
+for index in list_name:  #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    print(index)
