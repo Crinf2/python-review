@@ -100,3 +100,12 @@ my_str = "万薪过月，员序程马黑来，nohtyP学"
 my_str_1 = my_str[::-1][9:14]
 my_str_2 = my_str_1.split(",")#得到列表，可以修改
 print(my_str_2)
+
+
+#复现字符串“黑马程序员”
+i = "万薪过月，员序程马黑来，nohtyP学"
+o = i[::-1][9:14]
+print(o)
+p = i.split("，")
+a = p[1].replace("来","")[::-1]       #split得到的是列表，需要用下标取值得到字符串才能用replace
+print(a)
