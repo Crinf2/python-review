@@ -54,3 +54,40 @@ my_dict = {"张继科": "最速大满贯", "马龙": "超级全满贯"}
 print(my_dict["张继科"])
 #嵌套字典
 #key不可为字典
+
+
+#字典的方法操作
+#字典的新增元素和更改    字典[key] = value      如果存在则更新，不存在则新增
+my_dict["张继科"] = "藏獒"
+my_dict["许昕"] = "人民艺术家"
+print(my_dict)
+#删除元素       pop取出即删除，可以用变量接收    字典.pop(key)
+value = my_dict.pop("马龙")
+print(my_dict)
+print(value)
+#清除元素     clear     字典.clear
+#获取全部的key                               字典.keys()
+a = my_dict.keys()
+print(a)
+#遍历字典
+#方式一 通过获取全部的key
+for i in a:
+    print(f"my_dict的key是{i}")
+    print(f"my_dict的value是{my_dict[i]}")
+#方式二 直接对字典进行for循环，每一次循环都得到一个key
+for i in my_dict:
+    print(f"2my_dict的key是{i}")
+    print(f"2my_dict的value是{my_dict[i]}")
+#字典不支持下标索引，所以无法用while循环
+#统计字典的元素数量   len   用变量去接收
+
+
+#小练习   用字典完成数据更新
+#定义字典
+information = {
+    "王力宏": {"部门": "科技部", "工资": "3000", "级别": 1},
+    "周杰伦": {"部门": "市场部", "工资": "5000", "级别": 2},
+    "林俊杰": {"部门": "市场部", "工资": "7000", "级别": 3},
+    "张学友": {"部门": "科技部", "工资": "4000", "级别": 1},
+    "刘德华": {"部门": "市场部", "工资": "6000", "级别": 2},
+}

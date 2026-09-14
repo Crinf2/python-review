@@ -46,7 +46,7 @@ value_3 = mystr.index("sa")
 print(value_2)
 print(value_3)
 # replace方法       字符串的替换
-# 字符串.replace（字符串1， 字符串2）  即将原字符串中的所有字符串2替换为字符串1
+# 字符串.replace（字符串1， 字符串2）  即将原字符串中的所有字符串2替换成字符串1
 #如
 num_2 = "32783857233333333"
 num_3 = num_2.replace("3", "9")
